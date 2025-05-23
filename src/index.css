@@ -1,51 +1,13 @@
-@font-face {
-  font-family: 'WorkSans-Regular';
-  src: url('./fonts/WorkSans-Regular.woff2') format('woff2'),
-       url('./fonts/WorkSans-Regular.woff') format('woff'),
-       url("./fonts/WorkSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans-Bold';
-  src: url('./fonts/WorkSans-Bold.woff2') format('woff2'),
-       url('./fonts/WorkSans-Bold.woff') format('woff'),
-       url("./fonts/WorkSans-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans-SemiBold';
-  src: url('./fonts/WorkSans-SemiBold.woff2') format('woff2'),
-       url('./fonts/WorkSans-SemiBold.woff') format('woff'),
-       url("./fonts/WorkSans-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans-Medium';
-  src: url('./fonts/WorkSans-Medium.woff2') format('woff2'),
-       url('./fonts/WorkSans-Medium.woff') format('woff'),
-       url("./fonts/WorkSans-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-
-  font-family: WorkSans-Regular !important;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+}
