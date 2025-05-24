@@ -52,16 +52,11 @@ function App() {
     };
 
     try {
-      const res = await fetch('https://mfoqjhwykl.execute-api.ap-south-1.amazonaws.com/dev/repo', {
+      const res = await fetch('https://lo2t07qi22.execute-api.ap-south-1.amazonaws.com/dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-
-      JSON.stringify({
-      repositoryName: "$RepositoryName",
-      description: "Created from frontend"
-      })
 
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
@@ -92,7 +87,7 @@ function App() {
   return (
     <div className="app-container">
       <h2 className="title">Developers Portal</h2>
-      {/* <form onSubmit={(e) => e.preventDefault()} noValidate> */}
+      <form onSubmit={(e) => e.preventDefault()} noValidate>
         <AnimatePresence>
           {step === 1 && !reviewMode && (
             <motion.div className="form-section" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: 300, opacity: 0 }}>
@@ -209,7 +204,7 @@ function App() {
               </table>
               <div className="nav-buttons">
                 <button type="button" onClick={() => { setReviewMode(false); setStep(3); }}>Previous</button>
-                <button type="button" onClick={handleSubmit}>Submit</button>
+                <button type="button" onClick={()=>handleSubmit()}>Submit</button>
               </div>
             </motion.div>
           )}
@@ -241,7 +236,7 @@ function App() {
             </motion.div>
           )}
         </AnimatePresence>
-      {/* </form> */}
+      </form>
 
       {/* ✅ Success Popup */}
       <AnimatePresence>
