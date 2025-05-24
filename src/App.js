@@ -52,7 +52,7 @@ function App() {
     };
 
     try {
-      const res = await fetch('https://lo2t07qi22.execute-api.ap-south-1.amazonaws.com/dev', {
+      const res = await fetch('https://7htb6ehlbc.execute-api.ap-south-1.amazonaws.com/prod/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
